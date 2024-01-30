@@ -640,7 +640,7 @@ macro_rules! from_vk_for_num {
     };
 }
 
-from_vk_for_num!(u8 u16 u32 u64 u128 i8 i16 i32 i64 i128);
+from_vk_for_num!(u8 u16 u32 u64 u128 i8 i16 i32 i64 i128 usize);
 
 lazy_static! {
     // An array containing `true` if a given `u8` value is a valid
