@@ -724,6 +724,23 @@ impl Vk {
         self.into()
     }
 
+    /// Converts this Virtual-Key Code into a `usize`, which makes it handy
+    /// for array indices.
+    ///
+    /// ## Example
+    ///
+    /// ```rust
+    /// use winput::Vk;
+    ///
+    /// let mut array = [13; 256];
+    /// array[Vk::Enter.into_usize()] = 77;
+    /// assert_eq!(array[13], 77);
+    /// ```
+    #[inline(always)]
+    pub fn into_usize(self) -> usize {
+        self.into()
+    }
+
     /// Checks if this Virtual-Key Code is currently being pressed.
     ///
     /// ## Example
