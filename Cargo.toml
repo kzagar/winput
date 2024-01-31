@@ -40,6 +40,7 @@ features = ["winuser", "errhandlingapi", "winbase"]
 [dependencies.serde]
 version = "1"
 optional = true
+features = [ "derive" ]
 
 [dependencies.strum]
 version = "0.26"
